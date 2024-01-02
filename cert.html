@@ -1,0 +1,112 @@
+<style>
+*{ font-family: calibri;}
+.fullwrapper{ float:left; width:100%; max-width:740px; padding:0px;}
+*{ box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; color:#000;}
+.fullwrapper footer{ text-align:center; font-size:13px; width:100%;}
+.fullwrapper { 
+    float:left; 
+    width:100%;
+    padding:60px; 
+    background:url(https://github.com/533K0/certassets/blob/main/Certi-bg.jpg?raw=true) center center no-repeat;
+    background-size: cover;
+  }
+.fullwrapper .contentwrapper .certification-content{ float:left; width:65%;}
+.fullwrapper .contentwrapper table tr td{ padding:5px 5px;}
+.fullwrapper .contentwrapper table tr th{ padding:5px 5px; font-size:14px; font-weight:800;     color: #08000e;}
+.fullwrapper .contentwrapper table tr{ font-size:14px;}
+
+.fullwrapper header{ float:left; width:100%; position:relative;}
+/*.fullwrapper header:before{ position:absolute; left:0; width:100%; height:3px; content:''; background:#0E7CFD; top:50px;} */
+.fullwrapper header .client-logo{ float:left; z-index:999; position:relative; padding-right:20px; padding-left:20px; min-height: 100px;
+    display: flex;
+    align-items: center; }
+.fullwrapper header .client-logo img{ max-width:100px;}
+.fullwrapper header .VM-logo{ float:right; z-index:999; position:relative;min-height: 100px; display: flex; align-items: center; padding-right:20px; }
+.fullwrapper header .VM-logo img{ width:150px;}
+
+.fullwrapper .disclaimer{ float:left; width:100%; border-top:1px solid #e1e1e1;}
+.fullwrapper .disclaimer .content{ float:left; width:100%; font-size:10px;     text-align: justify; line-height:14px; border-right:0px solid #e1e1e1; padding-right:10px;}
+.fullwrapper .disclaimer .report{ float:right; width:22%; margin-top:35px;}
+.fullwrapper .disclaimer .report ul{ margin:0; padding:0;}
+.fullwrapper .disclaimer .report ul li{ list-style:none; float:left; width:100%; margin-bottom:5px;}
+.fullwrapper .disclaimer .report ul li a{ color:#0054A8; text-decoration:none; font-size:13px; margin-bottom:10px;}
+.green{ color:green;}
+.red{ color:red;}
+
+/* Style the word "Active" in green */
+#status {
+    color: green;
+}  
+  
+</style>
+    
+ 
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Webseal</title>
+<link href="https://fonts.googleapis.com/css?family=Arimo:400,700" rel="stylesheet">
+</head>
+
+<body>
+<div class="fullwrapper">
+	<header>
+		<div class="client-logo"><img src="https://www.strunkmedia.com/wp-content/uploads/2018/05/bigstock-Print-163213010.png" /></div>
+		<div class="VM-logo"><img src="https://verify.valuementor.com/assets/images/vmlogo.png" /></div>
+	</header>
+	<div class="contentwrapper">
+		<div class="certification-content">
+				<table width="0%">
+				<tr>
+					<th align="right" width="60%">Company Name</th>
+					<td> Company LLC </td>
+				</tr>
+				<tr>
+					<th align="right" width="60%">Certificate ID</th>
+					<td>VM-AE-1082-2023-2</td>
+				</tr>
+				<tr>
+					<th align="right">Address</th>
+					<td>Dubai, United Arab Emirates</td>
+				</tr>
+				<tr>
+					<th align="right">Services Assessed</th>
+					<td>Mail order/telephone order & E-Commerce</td>
+				</tr>
+				<tr>
+					<th align="right">Compliance Type</th>
+					<td>PCI DSS v4.0</td>
+				</tr>
+				<tr>
+					<th align="right">Category</th>
+					<td>Merchant </td>
+				</tr>
+				<tr>
+					<th align="right">Certification Status</th>
+					<td>
+					<span id="status" > Active </span>
+          </td>
+            <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var currentDate = new Date();
+            var formattedDate = currentDate.toLocaleDateString();
+            document.getElementById('status').textContent += ' as of ' + formattedDate; });
+    </script>
+          </td>
+				</tr>
+        <tr>
+          <td>
+            
+          </td>
+				</tr>
+			</table>
+				</div>
+	</div>
+	<div class="disclaimer">
+		<div class="content">
+		<p>DISCLAIMER: ValueMentor Infosec makes no representation or warranty as to whether [COMPANY NAME] is secure from either an internal or external attack or whether the cardholder data is at risk of being compromised. ValueMentor Infosec makes no representations or warranties regarding this company's business activities or operations.</p>
+		</div>
+		
+	</div>
+</div>
